@@ -1,0 +1,6 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+
+include "/home/display/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT

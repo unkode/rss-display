@@ -1,0 +1,79 @@
+Xsession: X session started for display at Tue May  9 12:57:00 EDT 2017
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/display/.Xauthority
+localuser:display being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+gpgconf: warning: can not open config file /home/display/.gnupg/gpg-agent.conf: No such file or directory
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+OpenGL version: 2.
+dbus-update-activation-environment: setting USER=display
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/display
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus
+dbus-update-activation-environment: setting LOGNAME=display
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting GDM_LANG=en_US.utf8
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1001
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting XAUTHORITY=/home/display/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/display
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1001/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/home/display
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+/usr/bin/x-session-manager: X server already running on display :0
+xfce4-session-Message: SSH authentication agent is already running
+gpg-agent[1565]: WARNING: "--write-env-file" is an obsolete option - it has no effect
+
+(xfce4-session:1535): xfce4-session-WARNING **: gpg-agent returned no PID in the variables
+gpg-agent[1566]: gpg-agent (GnuPG) 2.1.17 started
+/usr/bin/unclutter: someone created a sub-window to my sub-window! giving up
+kdeconnect.core: KdeConnect daemon starting
+kdeconnect.core: onStart
+kdeconnect.core: KdeConnect daemon started
+kdeconnect.core: Broadcasting identity packet
+incomingConnection
+nextPendingConnection (emtpy: false )
+kdeconnect.core: Starting client ssl (but I'm the server TCP socket)
+kdeconnect.core: Socket succesfully stablished an SSL connection
+kdeconnect.core: It is a new device "user@monolith"
+kdeconnect.core: Not loading plugin "kdeconnect_findmyphone" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_pausemusic" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_mpriscontrol" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_sftp" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_battery" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_telephony" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_mousepad" because device doesn't support it
+Gtk-Message: GtkDialog mapped without a transient parent. This is discouraged.
+Traceback (most recent call last):
+  File "/usr/share/terminator/terminatorlib/prefseditor.py", line 1382, in on_layout_profile_chooser_changed
+    self.layouteditor.on_layout_profile_chooser_changed(widget)
+  File "/usr/share/terminator/terminatorlib/prefseditor.py", line 1641, in on_layout_profile_chooser_changed
+    profile = widget.get_active_text()
+AttributeError: 'ComboBox' object has no attribute 'get_active_text'
+
+(xfce4-session:1535): Gtk-CRITICAL **: IA__gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-session:1535): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+xfsettingsd: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+Gdk-Message: nm-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+
+Gdk-Message: polkit-gnome-authentication-agent-1: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+
+Gdk-Message: terminator: Fatal IO error 0 (Success) on X server :0.0.
+
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0.0"
+      after 146 requests (146 known processed) with 2 events remaining.
+gpg-agent[1566]: SIGTERM received - shutting down ...
+gpg-agent[1566]: gpg-agent (GnuPG) 2.1.17 stopped
