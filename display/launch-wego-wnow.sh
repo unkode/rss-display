@@ -1,9 +1,10 @@
 while true
 do
   clear
-  echo -e "Last update:\r\n   $(date +%Y-%m-%d\ %H:%M:%S)\r\nCurrent weather:"
-  echo -e "$(~/display/wego/wego -d 0 | grep -v "Weather for")"
+  echo -e "Dernière mise-à-jour:\r\n   $(date +%Y-%m-%d\ %H:%M:%S)\r\nMétéo actuelle:"
+  #echo -e "$(~/display/wego/wego -d 0 | grep -v "Weather for")"
+  echo -e "$(curl -s  -l "http://wttr.in/montreal?0&lang=fr&Q")"
   echo -e -n "  ──────────────────────────"
-  sleep 1500
+  sleep 1200
 done
 
