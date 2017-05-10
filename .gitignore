@@ -1,0 +1,15 @@
+#blacklist top level folder
+/*
+
+#whitelist files & folders
+!.gitignore
+!README.md
+
+!.gem
+
+!display/
+!Documents/
+!Pictures/
+
+
+

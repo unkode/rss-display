@@ -6850,3 +6850,26 @@ kdeconnect.core: Not loading plugin "kdeconnect_mousepad" because device doesn't
 kdeconnect.core: Not loading plugin "kdeconnect_mpriscontrol" because device doesn't support it
 kdeconnect.core: Not loading plugin "kdeconnect_findmyphone" because device doesn't support it
 kdeconnect.core: Not loading plugin "kdeconnect_battery" because device doesn't support it
+kdeconnect.core: Socket connected
+kdeconnect.core: TCP connection done (i'm the existing device)
+kdeconnect.core: Starting server ssl (I'm the client TCP socket)
+kdeconnect.core: Socket succesfully stablished an SSL connection
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported input device type "/dev/input/event12".
+thunar-volman: Unsupported input device type "(null)".
+thunar-volman: Unsupported USB device type "snd-usb-audio".
+thunar-volman: Unsupported USB device type "uvcvideo".
+thunar-volman: Unsupported USB device type "snd-usb-audio".
+thunar-volman: Unsupported USB device type "uvcvideo".
+kdeconnect.core: Socket connected
+kdeconnect.core: TCP connection done (i'm the existing device)
+kdeconnect.core: Starting server ssl (I'm the client TCP socket)
+kdeconnect.core: Socket succesfully stablished an SSL connection
+kdeconnect.core: It is a new device "user@display"
+kdeconnect.core: Not loading plugin "kdeconnect_telephony" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_sftp" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_pausemusic" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_mousepad" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_mpriscontrol" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_findmyphone" because device doesn't support it
+kdeconnect.core: Not loading plugin "kdeconnect_battery" because device doesn't support it

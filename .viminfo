@@ -14,10 +14,10 @@
 ~MSle0~/extend=hourly
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1494445999,,"wq"
 :q!
 |2,0,1494362382,,"q!"
-:wq
-|2,0,1494349420,,"wq"
 :/extend=hourly
 |2,0,1494271651,,"/extend=hourly"
 :/dateFmt
@@ -49,51 +49,51 @@
 
 # Registers:
 ""1	LINE	0
-	done
-|3,1,1,1,1,0,1494341172,"done"
+	!.wegorc
+|3,1,1,1,1,0,1494445984,"!.wegorc"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1494341170,""
+	.nano
+|3,0,2,1,1,0,1494445692,".nano"
 "3	LINE	0
-	do
-|3,0,3,1,1,0,1494341170,"do"
+	.X*
+|3,0,3,1,1,0,1494445692,".X*"
 "4	LINE	0
-	while true
-|3,0,4,1,1,0,1494341170,"while true"
+	.x*
+|3,0,4,1,1,0,1494445692,".x*"
 "5	LINE	0
-	        clear
-|3,0,5,1,1,0,1494246085,"        clear"
+	.local
+|3,0,5,1,1,0,1494445692,".local"
 "6	LINE	0
-		date +%T
-|3,0,6,1,1,0,1494245721,"	date +%T"
+	.gem
+|3,0,6,1,1,0,1494445692,".gem"
 "7	LINE	0
-	        echo "Getting lastest meteorological data..."	
-|3,0,7,1,1,0,1494245391,"        echo \"Getting lastest meteorological data...\"	"
+	.gconf
+|3,0,7,1,1,0,1494445692,".gconf"
 "8	LINE	0
-	        echo "Getting lastest meteorological data..."
-|3,0,8,1,1,0,1494237031,"        echo \"Getting lastest meteorological data...\""
+	.gitconfig
+|3,0,8,1,1,0,1494445692,".gitconfig"
 "9	LINE	0
-	        clear
-|3,0,9,1,1,0,1494237031,"        clear"
+	.bash*
+|3,0,9,1,1,0,1494445692,".bash*"
 "-	CHAR	0
 	4
 |3,0,36,0,1,0,1494263395,"4"
 
 # File marks:
-'0  1  0  ~/.git/config
-|4,48,1,0,1494362382,"~/.git/config"
-'1  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
-|4,49,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
-'2  4  34  ~/.gtkrc-2.0
-|4,50,4,34,1494358882,"~/.gtkrc-2.0"
-'3  131  11  ~/.config/terminator/config
-|4,51,131,11,1494350702,"~/.config/terminator/config"
-'4  100  23  ~/.config/terminator/config
-|4,52,100,23,1494349420,"~/.config/terminator/config"
+'0  15  0  ~/.gitignore
+|4,48,15,0,1494445999,"~/.gitignore"
+'1  1  0  ~/.git/config
+|4,49,1,0,1494362382,"~/.git/config"
+'2  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+|4,50,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+'3  4  34  ~/.gtkrc-2.0
+|4,51,4,34,1494358882,"~/.gtkrc-2.0"
+'4  131  11  ~/.config/terminator/config
+|4,52,131,11,1494350702,"~/.config/terminator/config"
 '5  100  23  ~/.config/terminator/config
 |4,53,100,23,1494349420,"~/.config/terminator/config"
-'6  110  35  ~/.config/terminator/config
-|4,54,110,35,1494349387,"~/.config/terminator/config"
+'6  100  23  ~/.config/terminator/config
+|4,54,100,23,1494349420,"~/.config/terminator/config"
 '7  110  35  ~/.config/terminator/config
 |4,55,110,35,1494349387,"~/.config/terminator/config"
 '8  110  35  ~/.config/terminator/config
@@ -102,12 +102,22 @@
 |4,57,110,35,1494349387,"~/.config/terminator/config"
 
 # Jumplist (newest first):
+-'  15  0  ~/.gitignore
+|4,39,15,0,1494445999,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1494445379,"~/.gitignore"
+-'  1  0  ~/.git/config
+|4,39,1,0,1494362382,"~/.git/config"
 -'  1  0  ~/.git/config
 |4,39,1,0,1494362382,"~/.git/config"
 -'  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 |4,39,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
 -'  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 |4,39,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+-'  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+|4,39,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+-'  1  0  /usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+|4,39,1,0,1494358956,"/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
 -'  4  34  ~/.gtkrc-2.0
 |4,39,4,34,1494358882,"~/.gtkrc-2.0"
 -'  4  34  ~/.gtkrc-2.0
@@ -116,6 +126,22 @@
 |4,39,4,34,1494358882,"~/.gtkrc-2.0"
 -'  4  34  ~/.gtkrc-2.0
 |4,39,4,34,1494358882,"~/.gtkrc-2.0"
+-'  4  34  ~/.gtkrc-2.0
+|4,39,4,34,1494358882,"~/.gtkrc-2.0"
+-'  4  34  ~/.gtkrc-2.0
+|4,39,4,34,1494358882,"~/.gtkrc-2.0"
+-'  4  34  ~/.gtkrc-2.0
+|4,39,4,34,1494358882,"~/.gtkrc-2.0"
+-'  4  34  ~/.gtkrc-2.0
+|4,39,4,34,1494358882,"~/.gtkrc-2.0"
+-'  1  0  ~/.gtkrc-2.0
+|4,39,1,0,1494358856,"~/.gtkrc-2.0"
+-'  1  0  ~/.gtkrc-2.0
+|4,39,1,0,1494358856,"~/.gtkrc-2.0"
+-'  1  0  ~/.gtkrc-2.0
+|4,39,1,0,1494358856,"~/.gtkrc-2.0"
+-'  1  0  ~/.gtkrc-2.0
+|4,39,1,0,1494358856,"~/.gtkrc-2.0"
 -'  1  0  ~/.gtkrc-2.0
 |4,39,1,0,1494358856,"~/.gtkrc-2.0"
 -'  1  0  ~/.gtkrc-2.0
@@ -140,6 +166,22 @@
 |4,39,131,11,1494350702,"~/.config/terminator/config"
 -'  131  11  ~/.config/terminator/config
 |4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
+-'  131  11  ~/.config/terminator/config
+|4,39,131,11,1494350702,"~/.config/terminator/config"
 -'  100  23  ~/.config/terminator/config
 |4,39,100,23,1494350579,"~/.config/terminator/config"
 -'  100  23  ~/.config/terminator/config
@@ -156,6 +198,38 @@
 |4,39,100,23,1494350579,"~/.config/terminator/config"
 -'  100  23  ~/.config/terminator/config
 |4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494350579,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
+-'  100  23  ~/.config/terminator/config
+|4,39,100,23,1494349420,"~/.config/terminator/config"
 -'  100  23  ~/.config/terminator/config
 |4,39,100,23,1494349420,"~/.config/terminator/config"
 -'  100  23  ~/.config/terminator/config
@@ -205,105 +279,51 @@
 -'  110  35  ~/.config/terminator/config
 |4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 -'  110  35  ~/.config/terminator/config
-|4,39,110,35,1494349387,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494349234,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  145  22  ~/.config/terminator/config
-|4,39,145,22,1494348879,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
--'  18  22  ~/.config/terminator/config
-|4,39,18,22,1494348802,"~/.config/terminator/config"
+|4,39,110,35,1494349389,"~/.config/terminator/config"
+-'  110  35  ~/.config/terminator/config
+|4,39,110,35,1494349389,"~/.config/terminator/config"
+-'  110  35  ~/.config/terminator/config
+|4,39,110,35,1494349389,"~/.config/terminator/config"
+-'  110  35  ~/.config/terminator/config
+|4,39,110,35,1494349389,"~/.config/terminator/config"
+-'  110  35  ~/.config/terminator/config
+|4,39,110,35,1494349389,"~/.config/terminator/config"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1494445997	0
+	"	15	0
+	.	8	0
+	+	1	0
+	+	1	5
+	+	1	7
+	+	1	4
+	+	1	6
+	+	1	5
+	+	1	4
+	+	1	27
+	+	8	8
+	+	8	9
+	+	12	10
+	+	8	0
+	+	13	0
+	+	7	0
+	+	8	0
 
 > ~/.git/config
 	*	1494362380	0

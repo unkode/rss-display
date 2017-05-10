@@ -495,3 +495,8 @@ display@display:~$ gnome-
 gnome-contacts               gnome-session-inhibit
 export GTK_OVERLAY_SCROLLING=0
 terminator
+htop
+exit
+mottion
+su - ruser
+exit
