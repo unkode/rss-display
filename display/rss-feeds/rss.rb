@@ -6,7 +6,8 @@ require 'nokogiri'
 
 ## Parameters
 
-$TYPING_RATE_SECONDS=0.08
+$TYPING_RATE_SECONDS=0.06
+$DELAY_BETWEEN_FEEDS_MIN=5
 $REFRESH_TIME_MIN=45
 $REFRESH_FLAG=true
 
@@ -186,7 +187,7 @@ while(1)
 		type(item.description + "\r\n".force_encoding(Encoding::UTF_8),"green")
 		
 		puts ""
-		sleep 2
+		sleep $DELAY_BETWEEN_FEEDS_MIN
 		
 		check_if_refresh()
 	end
