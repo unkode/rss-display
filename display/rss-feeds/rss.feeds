@@ -1,5 +1,3 @@
-http://feeds.feedburner.com/DiscoverTopStories?format=xml
-http://feeds.feedburner.com/AllDiscovermagazinecomContent?format=xml
 https://www.offensive-security.com/feed/
 http://rss.radio-canada.ca/fils/nouvelles/nouvelles.xml
 http://rss.radio-canada.ca/fils/nouvelles/politique.xml
@@ -22,4 +20,4 @@ http://rss.radio-canada.ca/fils/nouvelles/international.xml
 http://www.goodnewsnetwork.org/feed/
 http://theantimedia.org/feed/
 https://nvd.nist.gov/download/nvd-rss.xml
-https://www.publicsafety.gc.ca/cnt/_xml/cybr-ctr-eng.xml
+https://rss.packetstormsecurity.com/

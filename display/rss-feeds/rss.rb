@@ -3,6 +3,7 @@ require 'rubygems'
 require 'simple-rss'
 require 'open-uri'
 require 'nokogiri'
+require 'date'
 
 ## Parameters
 
@@ -94,7 +95,7 @@ def refresh_rss_feeds()
 		
 		line.chop!
 		
-		if line.length == 0 or line == nil
+		if line.length == 0 or line == nil or line =~ /^#/
 			next
 		end
 
@@ -109,6 +110,21 @@ end
 		#puts "Fetching: #{feed.channel.title}".console_green
 
 		for news in feed.items
+
+			if news.pubDate != nil
+				if news.pubDate < (Time.now - (60*60*24*3))
+					next
+				end
+			end
+
+			#ATOM feed
+                        if news.dc_date != nil
+                                if news.dc_date < (Time.now - (60*60*24*3))
+                                        next
+                                end
+                        end
+
+
 			items_nbr += 1
 			item = $item_struct.new
 
