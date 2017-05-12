@@ -122,6 +122,14 @@ end
                                 if news.dc_date < (Time.now - (60*60*24*3))
                                         next
                                 end
+
+				#Handle NIST fucking monster truck load of items
+				if news.title =~ /cve-/i
+	                                if news.dc_date < (Time.now - (60*60*8))
+        	                                next
+                	                end
+				end
+				news.pubDate = news.dc_date
                         end
 
 
