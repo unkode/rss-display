@@ -109,7 +109,7 @@ begin
 
 rescue Exception => e
         puts "ERROR Fetching: #{e.message}".console_dark_red
-	next
+	nextc
 end
 
 begin
@@ -117,21 +117,23 @@ begin
                 # Show channel image if available 
                 if (defined?(rss.channel.image)) != nil
                         image_xml = Nokogiri::XML(rss.feed.image)
+			image_url = Array.new
 
                         if image_xml != nil
                                 image_url = image_xml.xpath('//url[1]').map(&:content)
                         end
 
-			image_width = TermInfo.screen_size[1]-(TermInfo.screen_size[1]/5)
+			image_width = TermInfo.screen_size[1]-((TermInfo.screen_size[1]/5)*2)
 
-                        if image_url != nil   
-                                a = AsciiArt.new(image_url.first)
-                                print a.to_ascii_art(width: image_width, color: true)
+                        if image_url != nil and (image_url.empty? != true)   
+                                a = AsciiArt.new(image_url.first.to_s())
+                                print a.to_ascii_art(width: image_width, color: true, invert: true)
                         end
                 end
 
 rescue Exception => e
-        #puts "ERROR Fetching IMAGE: #{e.message}".console_dark_red
+        puts "ERROR Fetching IMAGE: #{e.message}".console_dark_red
+	puts "#{e.backtrace}"
         next
 end
 
@@ -157,7 +159,7 @@ end
         	                                next
                 	                end
 				end
-				news.pubDate = news.dc_date
+				#news.pubDate = news.dc_date
                         end
 
 
