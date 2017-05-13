@@ -4,6 +4,8 @@ require 'simple-rss'
 require 'open-uri'
 require 'nokogiri'
 require 'date'
+require 'asciiart'
+require 'terminfo'
 
 ## Parameters
 
@@ -99,17 +101,43 @@ def refresh_rss_feeds()
 			next
 		end
 
-		 puts "Fetching: #{line}".console_green
+
+		puts "Fetching: #{line}".console_green
 begin		
-		feed = SimpleRSS.parse(open(line).read)
+
+		rss = SimpleRSS.parse(open(line).read)
+
 rescue Exception => e
         puts "ERROR Fetching: #{e.message}".console_dark_red
 	next
 end
-	
-		#puts "Fetching: #{feed.channel.title}".console_green
 
-		for news in feed.items
+begin
+
+                # Show channel image if available 
+                if (defined?(rss.channel.image)) != nil
+                        image_xml = Nokogiri::XML(rss.feed.image)
+
+                        if image_xml != nil
+                                image_url = image_xml.xpath('//url[1]').map(&:content)
+                        end
+
+			image_width = TermInfo.screen_size[1]-(TermInfo.screen_size[1]/5)
+
+                        if image_url != nil   
+                                a = AsciiArt.new(image_url.first)
+                                print a.to_ascii_art(width: image_width, color: true)
+                        end
+                end
+
+rescue Exception => e
+        #puts "ERROR Fetching IMAGE: #{e.message}".console_dark_red
+        next
+end
+
+	
+
+		for news in rss.items
 
 			if news.pubDate != nil
 				if news.pubDate < (Time.now - (60*60*24*3))
@@ -137,7 +165,7 @@ end
 			item = $item_struct.new
 
 begin			
-			item.provider = feed.channel.title.to_s().html2text.gsub(/<\/?[^>]*>/, "")
+			item.provider = rss.channel.title.to_s().html2text.gsub(/<\/?[^>]*>/, "")
 			item.pubdate = news.pubDate.to_s().html2text.gsub(/<\/?[^>]*>/, "")
 			item.title = news.title.to_s().html2text.gsub(/<\/?[^>]*>/, "")
 			item.description = news.description.to_s().html2text.gsub(/<\/?[^>]*>/, "")
