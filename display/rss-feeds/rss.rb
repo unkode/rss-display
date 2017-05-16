@@ -109,7 +109,7 @@ begin
 
 rescue Exception => e
         puts "ERROR Fetching: #{e.message}".console_dark_red
-	nextc
+	next
 end
 
 begin
@@ -132,9 +132,9 @@ begin
                 end
 
 rescue Exception => e
-        puts "ERROR Fetching IMAGE: #{e.message}".console_dark_red
-	puts "#{e.backtrace}"
-        next
+        #puts "ERROR Fetching IMAGE: #{e.message}".console_dark_red
+	#puts "#{e.backtrace}"
+        #next
 end
 
 	
@@ -155,7 +155,7 @@ end
 
 				#Handle NIST fucking monster truck load of items
 				if news.title =~ /cve-/i
-	                                if news.dc_date < (Time.now - (60*60*8))
+	                                if news.dc_date < (Time.now - (60*60*24))
         	                                next
                 	                end
 				end
